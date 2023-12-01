@@ -6,7 +6,7 @@ const MotionLink = motion(Link);
 
 const Logo = () => {
   return (
-    <div className="flex items-center justify-center mt-2">
+    <div className="w-full flex justify-between items-center">
       <MotionLink
         href="/"
         className="w-16 h-16 bg-dark text-light flex items-center justify-center rounded-md text-2xl font-bold"
