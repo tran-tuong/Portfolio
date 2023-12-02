@@ -7,6 +7,8 @@ import profilePic from "../../public/images/profile/developer-pic-1.png";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "@/components/Icons";
+import HireMe from "@/components/HireMe";
+import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -51,7 +53,7 @@ export default function Home() {
                 <Link
                   href="mailto:tranvantuong2k3@gmail.com"
                   target={"_blank"}
-                  className="ml-4 text-lg font-medium capitalize text-dark underline hover:decoration-2"
+                  className=" ml-4 text-lg font-medium capitalize text-dark underline hover:decoration-2"
                 >
                   Contact
                 </Link>
@@ -59,6 +61,12 @@ export default function Home() {
             </div>
           </div>
         </Layout>
+
+        <HireMe />
+
+        {/* <div className="absolute right-8 bottom-8 inline-block w-24">
+          <Image src={lightBulb} alt="TranTuong" className="w-ful h-auto" />
+        </div> */}
       </main>
     </>
   );
