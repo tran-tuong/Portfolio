@@ -19,7 +19,7 @@ const Footer = () => {
           </Link>
         </div>
 
-        <Link href="/" target="_blank">
+        <Link href="https://www.facebook.com/trantuong2k3" target="_blank">
           Say Hello
         </Link>
       </Layout>
