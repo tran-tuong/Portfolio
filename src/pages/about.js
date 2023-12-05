@@ -7,6 +7,7 @@ import Image from "next/image";
 import profilePic from "../../public/images/profile/developer-pic-2.jpg";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
+import Education from "@/components/Education";
 
 const bioContent = [
   "Hi, I'm CodeBucks, a web developer and UI/UX designer with apassion for creating beautiful, functional, and user-centered digital experiences. With 4 years of experience in the field. I am always looking for new and innovative ways to bring my clients' visions to life.",
@@ -95,6 +96,7 @@ const about = () => {
           </div>
           <Skills />
           <Experience />
+          <Education />
         </Layout>
       </main>
     </>
