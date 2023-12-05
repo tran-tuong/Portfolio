@@ -34,7 +34,7 @@ const NavBar = () => {
       <nav>
         <CustomLink href="/" title="Home" className="mr-4" />
         <CustomLink href="/about" title="About" className="mx-4" />
-        <CustomLink href="/project" title="Project" className="mx-4" />
+        <CustomLink href="/projects" title="Projects" className="mx-4" />
         <CustomLink href="/articles" title="Articles" className="ml-4" />
       </nav>
 
@@ -86,7 +86,7 @@ const NavBar = () => {
         </motion.a>
       </nav>
 
-      <div className="absolute left-[45%] top-3 translate-x-[45%]">
+      <div className="absolute left-[48%] top-3 translate-x-[48%]">
         <Logo />
       </div>
     </header>
