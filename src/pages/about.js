@@ -8,6 +8,7 @@ import profilePic from "../../public/images/profile/developer-pic-2.jpg";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";
+import TransitionEffect from "@/components/TransitionEffect";
 
 const bioContent = [
   "Hi, I'm CodeBucks, a web developer and UI/UX designer with apassion for creating beautiful, functional, and user-centered digital experiences. With 4 years of experience in the field. I am always looking for new and innovative ways to bring my clients' visions to life.",
@@ -49,6 +50,7 @@ const about = () => {
         <title> TranTuong | About Page</title>
         <meta name="description" content="any description"></meta>
       </Head>
+      <TransitionEffect />
       <main className="flex -w-full flex-col items-center justify-center">
         <Layout className="pt-16">
           <AnimatedText text="Passion Fuels Purpose!" className="mb-16" />

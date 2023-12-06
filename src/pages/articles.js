@@ -6,6 +6,7 @@ import Image from "next/image";
 import React, { useRef } from "react";
 import article1 from "../../public/images/articles/create modal component in react using react portals.png";
 import { motion, useMotionValue } from "framer-motion";
+import TransitionEffect from "@/components/TransitionEffect";
 
 const FramerImage = motion(Image);
 const MovingImg = ({ title, img, link }) => {
@@ -97,6 +98,7 @@ const articles = () => {
         <title> TranTuong | Articles Page</title>
         <meta name="description" content="any description"></meta>
       </Head>
+      <TransitionEffect />
       <main className="w-ful mb-16 flex flex-col items-center justify-center overflow-hidden">
         <Layout className="pt-16">
           <AnimatedText
