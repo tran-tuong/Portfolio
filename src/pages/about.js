@@ -4,14 +4,14 @@ import { motion, useMotionValue, useSpring, useInView } from "framer-motion";
 import Head from "next/head";
 import Layout from "@/components/Layout";
 import Image from "next/image";
-import profilePic from "../../public/images/profile/developer-pic-2.jpg";
+import profilePic from "../../public/images/profile/profile-1.png";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";
 import TransitionEffect from "@/components/TransitionEffect";
 
 const bioContent = [
-  "Hi, I'm CodeBucks, a web developer and UI/UX designer with apassion for creating beautiful, functional, and user-centered digital experiences. With 4 years of experience in the field. I am always looking for new and innovative ways to bring my clients' visions to life.",
+  "Hi, I'm Tran Tuong, a web developer and UI/UX designer with apassion for creating beautiful, functional, and user-centered digital experiences. With 4 years of experience in the field. I am always looking for new and innovative ways to bring my clients' visions to life.",
   "I believe that design is about more than just making things look pretty – it's about solving problems and creating intuitive, enjoyable experiences for users.",
   "Whether I'm working on a website, mobile app, or other digital product, I bring my commitment to design excellence and user-centered thinking to every project I work on. I look forward to the opportunity to bring my skills and passion to your next project.",
 ];
@@ -47,7 +47,7 @@ const about = () => {
   return (
     <>
       <Head>
-        <title> TranTuong | About Page</title>
+        <title> TranTuong | About</title>
         <meta name="description" content="any description"></meta>
       </Head>
       <TransitionEffect />

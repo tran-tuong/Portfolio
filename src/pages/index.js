@@ -1,14 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
 import Layout from "@/components/Layout";
-import profilePic from "../../public/images/profile/developer-pic-1.png";
+import profilePic from "../../public/images/profile/profile-ava.png";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "@/components/Icons";
 import HireMe from "@/components/HireMe";
-import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
 import TransitionEffect from "@/components/TransitionEffect";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -22,7 +20,7 @@ export default function Home() {
       </Head>
       <TransitionEffect />
       <main className="flex items-center text-dark w-full min-h-screen">
-        <Layout>
+        <Layout className="pt-0">
           <div className="flex items-center justify-between w-full">
             <div className="w-1/2">
               <Image
@@ -65,10 +63,6 @@ export default function Home() {
         </Layout>
 
         <HireMe />
-
-        {/* <div className="absolute right-8 bottom-8 inline-block w-24">
-          <Image src={lightBulb} alt="TranTuong" className="w-ful h-auto" />
-        </div> */}
       </main>
     </>
   );

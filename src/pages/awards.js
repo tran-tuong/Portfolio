@@ -4,7 +4,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import React, { useRef } from "react";
-import article1 from "../../public/images/articles/create modal component in react using react portals.png";
+import award1 from "../../public/images/awards/create modal component in react using react portals.png";
 import { motion, useMotionValue } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
 
@@ -48,7 +48,7 @@ const MovingImg = ({ title, img, link }) => {
   );
 };
 
-const Articles = ({ img, title, date, link }) => {
+const Awards = ({ img, title, date, link }) => {
   return (
     <motion.li
       initial={{ y: 200 }}
@@ -62,7 +62,7 @@ const Articles = ({ img, title, date, link }) => {
   );
 };
 
-const FeaturedArticle = ({ img, title, time, summary, link }) => {
+const FeaturedAward = ({ img, title, time, summary, link }) => {
   return (
     <li className="col-span-1 w-full p-5 bg-light border boder-solid border-dark rounded-2xl relative">
       <div class="absolute top-0 -right-3 -z-10 h-[103%] w-[102%] rounded-[2.5rem] rounded-br-3xl bg-dark dark:bg-light  xs:-right-2 xs:h-[102%] xs:w-[100%] xs:rounded-[1.5rem] " />
@@ -91,11 +91,11 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
   );
 };
 
-const articles = () => {
+const awards = () => {
   return (
     <>
       <Head>
-        <title> TranTuong | Articles Page</title>
+        <title> TranTuong | Awards</title>
         <meta name="description" content="any description"></meta>
       </Head>
       <TransitionEffect />
@@ -106,54 +106,54 @@ const articles = () => {
             className="mb-20"
           ></AnimatedText>
           <ul className="grid grid-cols-2 gap-16">
-            <FeaturedArticle
+            <FeaturedAward
               title="Build A Custom Pagination Component In Reactjs From Scratch"
               summary="Learn how to build a custom pagination component in ReactJS from scratch.
             Follow this step-by-step guide to integrate Pagination component in your ReactJS project."
               time="9 min read"
-              img={article1}
+              img={award1}
               link="/"
             />
-            <FeaturedArticle
+            <FeaturedAward
               title="Build A Custom Pagination Component In Reactjs From Scratch"
               summary="Learn how to build a custom pagination component in ReactJS from scratch.
             Follow this step-by-step guide to integrate Pagination component in your ReactJS project."
               time="9 min read"
-              img={article1}
+              img={award1}
               link="/"
             />
           </ul>
 
           <h2 className="font-bold text-4xl w-full text-center my-16 mt-32">
-            All articles
+            All Certificate
           </h2>
           <ul>
-            <Articles
-              img={article1}
+            <Awards
+              img={award1}
               link="/"
               title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
               date="December 12, 2023"
             />
-            <Articles
-              img={article1}
+            <Awards
+              img={award1}
               link="/"
               title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
               date="December 12, 2023"
             />
-            <Articles
-              img={article1}
+            <Awards
+              img={award1}
               link="/"
               title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
               date="December 12, 2023"
             />
-            <Articles
-              img={article1}
+            <Awards
+              img={award1}
               link="/"
               title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
               date="December 12, 2023"
             />
-            <Articles
-              img={article1}
+            <Awards
+              img={award1}
               link="/"
               title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
               date="December 12, 2023"
@@ -165,4 +165,4 @@ const articles = () => {
   );
 };
 
-export default articles;
+export default awards;
