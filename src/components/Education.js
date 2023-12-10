@@ -31,7 +31,7 @@ const Details = ({ type, time, place, info }) => {
   return (
     <li
       ref={ref}
-      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between"
+      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between md:w-[80%]"
     >
       <LiIcon reference={ref} />
       <motion.div
@@ -39,11 +39,13 @@ const Details = ({ type, time, place, info }) => {
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5, type: "spring" }}
       >
-        <h3 className="capitalize font-bold text-2xl">{type}&nbsp; </h3>
-        <span className="capitalize font-medium text-dark/75">
+        <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-sm">
+          {type}&nbsp;{" "}
+        </h3>
+        <span className="capitalize font-medium text-dark/75 xs:text-xs">
           {time} | {place}
         </span>
-        <p className="font-medium w-full">{info}</p>
+        <p className="font-medium w-full md:text-xs">{info}</p>
       </motion.div>
     </li>
   );
@@ -57,16 +59,19 @@ const Education = () => {
   });
   return (
     <>
-      <div className="my-64">
-        <h2 className="font-bold text-8xl mb-32 w-full text-center">
+      <div className="my-64 xs:mb-96">
+        <h2 className="font-bold text-8xl mb-32 w-full text-center lg:text-7xl md:text-6xl md:mt-32 md:mb-16 sm:text-5xl">
           Education
         </h2>
-        <div ref={ref} className="w-[75] mx-auto relative">
+        <div
+          ref={ref}
+          className="w-[75%] mx-auto relative lg:w-[90%] md:w-full"
+        >
           <motion.div
             style={{ scaleY: scrollYProgress }}
-            className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top"
+            className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top md:w-[2px] md:left-[30px] xs:left-[19px]"
           />
-          <ul className="w-full flex flex-col items-start justify-between ml-4">
+          <ul className="w-full flex flex-col items-start justify-between ml-4 text-justify xs:ml-2">
             {dataExperience.map((item, index) => {
               return (
                 <Details

@@ -13,12 +13,48 @@ module.exports = {
         primaryDark: "#58E6D9", // 80,230,217
       },
       animation: {
-        "spin-slow": "spin 20s linear infinite",
+        "spin-slow": "spin 25s linear infinite",
       },
       backgroundImage: {
         circularLight:
-          "repeating-radial-gradient(rgba(0,0,0,0.4) 2px, #f5f5f5 5px, #f5f5f5 100px);",
+          "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px,#f5f5f5 100px)",
+        circularLightLg:
+          "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px,#f5f5f5 80px)",
+        circularLightMd:
+          "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px,#f5f5f5 60px)",
+        circularLightSm:
+          "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px,#f5f5f5 40px)",
       },
+      screens: {
+        "2xl": { max: "1535px" },
+        tablet: "640px",
+        // => @media (min-width: 640px) { ... }
+
+        laptop: "1024px",
+        // => @media (min-width: 1024px) { ... }
+
+        desktop: "1280px",
+        // => @media (min-width: 1280px) { ... }
+      },
+    },
+    screens: {
+      "2xl": { max: "1535px" },
+      // => @media (max-width: 1535px) { ... }
+
+      xl: { max: "1279px" },
+      // => @media (max-width: 1279px) { ... }
+
+      lg: { max: "1023px" },
+      // => @media (max-width: 1023px) { ... }
+
+      md: { max: "767px" },
+      // => @media (max-width: 767px) { ... }
+
+      sm: { max: "639px" },
+      // => @media (max-width: 639px) { ... }
+
+      xs: { max: "479px" },
+      // => @media (max-width: 479px) { ... }
     },
   },
   plugins: [],

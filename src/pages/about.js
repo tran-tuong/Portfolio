@@ -18,7 +18,7 @@ const bioContent = [
 const bioNumber = [
   { number: 50, name: "Satisfied Employee" },
   { number: 40, name: "Hours per day" },
-  { number: 20, name: "Years of experince" },
+  { number: 20, name: "Years of experinces" },
 ];
 
 const AnimationNumbers = ({ value }) => {
@@ -53,23 +53,29 @@ const about = () => {
       <TransitionEffect />
       <main className="flex -w-full flex-col items-center justify-center">
         <Layout className="pt-16">
-          <AnimatedText text="Passion Fuels Purpose!" className="mb-16" />
+          <AnimatedText
+            text="Passion Fuels Purpose!"
+            className="mb-16 sm:mb-8"
+          />
 
-          <div className="grid w-full grid-cols-8 gap-16 text-justify items-center justify-center">
-            <div className="col-span-3 flex flex-col items-start justify-start">
+          <div className="grid w-full grid-cols-8 gap-16 text-justify items-center justify-center sm:gap-8 ">
+            <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8">
               <h2 className="mb-4 text-lg font-bold uppercase text-dark/75">
                 Biography
               </h2>
               {bioContent.map((item, index) => {
                 return (
-                  <p className="font-medium my-2" key={index}>
+                  <p
+                    className="font-medium my-2 lg:text-sm md:text-base sm:text-sm"
+                    key={index}
+                  >
                     {item}
                   </p>
                 );
               })}
             </div>
 
-            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 flex">
+            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 flex xl:col-span-4 md:order-1 md:col-span-8">
               <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-2xl bg-dark" />
               <Image
                 src={profilePic}
@@ -78,17 +84,17 @@ const about = () => {
               />
             </div>
 
-            <div className="col-span-2 flex flex-col justify-between h-full items-end">
+            <div className="col-span-2 flex flex-col justify-between h-full items-end xl:col-span-8 xl:flex-row xl:items-center  md:order-3">
               {bioNumber.map((item, index) => {
                 return (
                   <div
-                    className="justify-center flex flex-col items-end"
+                    className="justify-center flex flex-col items-end xl:items-center"
                     key={index}
                   >
-                    <span className="inline-block text-7xl font-bold">
+                    <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
                       <AnimationNumbers value={item.number} />+
                     </span>
-                    <h2 className="text-xl font-medium capitalize text-dark/75">
+                    <h2 className="text-xl font-medium capitalize text-dark/75 xl:text-center md:text-base sm:text-sm xs:text-xs">
                       {item.name}
                     </h2>
                   </div>
