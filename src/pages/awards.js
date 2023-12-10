@@ -42,7 +42,7 @@ const MovingImg = ({ title, img, link }) => {
         ref={imgRef}
         src={img}
         alt={title}
-        className="z-10 w-96 h-auto hidden absolute rounded-lg"
+        className="z-10 w-96 h-auto hidden absolute rounded-lg lg:!hidden"
       />
     </Link>
   );
@@ -54,10 +54,10 @@ const Awards = ({ img, title, date, link }) => {
       initial={{ y: 200 }}
       whileInView={{ y: 0, transition: { duration: 0.5, ease: "easeInOut" } }}
       className="relative w-full flex justify-between items-center p-4 py-6 my-4 rounded-xl
-    first:mt-0 border border-solid border-dark border-r-4 border-b-4"
+    first:mt-0 border border-solid border-dark border-r-4 border-b-4 sm:flex-col"
     >
       <MovingImg title={title} link={link} img={img} />
-      <span className="text-primary font-semibold ">{date}</span>
+      <span className="text-primary font-semibold sm:self-start">{date}</span>
     </motion.li>
   );
 };
@@ -81,7 +81,7 @@ const FeaturedAward = ({ img, title, time, summary, link }) => {
       </Link>
 
       <Link href={link} target="_blank">
-        <h2 className="capitalize text-2xl font-bold my-4 hover:underline">
+        <h2 className="capitalize text-2xl font-bold my-4 hover:underline lg:text-lg">
           {title}
         </h2>
       </Link>
@@ -105,7 +105,7 @@ const awards = () => {
             text={"Words Can Change The World! "}
             className="mb-20"
           ></AnimatedText>
-          <ul className="grid grid-cols-2 gap-16">
+          <ul className="grid grid-cols-2 gap-16 lg:gap-8 md:grid-cols-1 md:gap-16">
             <FeaturedAward
               title="Build A Custom Pagination Component In Reactjs From Scratch"
               summary="Learn how to build a custom pagination component in ReactJS from scratch.

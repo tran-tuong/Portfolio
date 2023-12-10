@@ -226,7 +226,7 @@ const NavBar = () => {
         </motion.div>
       ) : null}
 
-      <div className="absolute left-[48%] top-3 translate-x-[48%] lg:left-[45%] lg:translate-x-[45%]">
+      <div className="absolute left-[48%] top-3 translate-x-[48%] lg:left-[45%] lg:translate-x-[45%] md:translate-x-[43%] md:left-[43%] sm:translate-x-[41%] sm:left-[41%] xs:translate-x-[37%] xs:left-[37%]">
         <Logo />
       </div>
       <div className="hidden lg:flex">
