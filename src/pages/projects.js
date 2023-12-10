@@ -194,7 +194,7 @@ const projects = () => {
 
             {ProjectData.map((item, index) => {
               return (
-                <div className="col-span-6 md:col-span-12" index={index}>
+                <div className="col-span-6 md:col-span-12" key={index}>
                   <Project
                     title={item.title}
                     type={item.type}
