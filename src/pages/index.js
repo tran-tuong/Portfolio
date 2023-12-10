@@ -53,7 +53,7 @@ export default function Home() {
                 <Link
                   href="mailto:tranvantuong2k3@gmail.com"
                   target={"_blank"}
-                  className=" ml-4 text-lg font-medium capitalize text-dark underline hover:decoration-2 md:text-base"
+                  className="ml-4 text-lg font-medium capitalize text-dark underline hover:decoration-2 md:text-base"
                 >
                   Contact
                 </Link>
