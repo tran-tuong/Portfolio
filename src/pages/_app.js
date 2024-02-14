@@ -1,8 +1,8 @@
-import "@/styles/globals.css";
+import "../styles/globals.css";
 import { Montserrat } from "next/font/google";
 import Head from "next/head";
-import NavBar from "@/components/NavBar";
-import Footer from "@/components/Footer";
+import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 

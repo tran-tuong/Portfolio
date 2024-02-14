@@ -1,6 +1,6 @@
 import Head from "next/head";
 import React, { ReactElement } from "react";
-import TransitionEffect from "@/components/TransitionEffect";
+import TransitionEffect from "../components/TransitionEffect";
 import Countdown from "../components/Countdown";
 
 const minievil = (): ReactElement => {
