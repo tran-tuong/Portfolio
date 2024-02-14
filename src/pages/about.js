@@ -1,14 +1,14 @@
-import AnimatedText from "@/components/AnimatedText";
+import AnimatedText from "../components/AnimatedText";
 import React, { useEffect, useRef } from "react";
 import { motion, useMotionValue, useSpring, useInView } from "framer-motion";
 import Head from "next/head";
-import Layout from "@/components/Layout";
+import Layout from "../components/Layout";
 import Image from "next/image";
 import profilePic from "../../public/images/profile/profile-1.png";
-import Skills from "@/components/Skills";
-import Experience from "@/components/Experience";
-import Education from "@/components/Education";
-import TransitionEffect from "@/components/TransitionEffect";
+import Skills from "../components/Skills";
+import Experience from "../components/Experience";
+import Education from "../components/Education";
+import TransitionEffect from "../components/TransitionEffect";
 
 const bioContent = [
   "Hi, I'm Tran Tuong, a web developer and UI/UX designer with apassion for creating beautiful, functional, and user-centered digital experiences. With 4 years of experience in the field. I am always looking for new and innovative ways to bring my clients' visions to life.",

@@ -1,13 +1,13 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import Layout from "@/components/Layout";
+import Layout from "../components/Layout";
 import profilePic from "../../public/images/profile/profile-ava.png";
-import AnimatedText from "@/components/AnimatedText";
+import AnimatedText from "../components/AnimatedText";
 import Link from "next/link";
-import { LinkArrow } from "@/components/Icons";
-import HireMe from "@/components/HireMe";
-import TransitionEffect from "@/components/TransitionEffect";
+import { LinkArrow } from "../components/Icons";
+import HireMe from "../components/HireMe";
+import TransitionEffect from "../components/TransitionEffect";
 
 const inter = Inter({ subsets: ["latin"] });
 

@@ -1,12 +1,12 @@
-import AnimatedText from "@/components/AnimatedText";
-import Layout from "@/components/Layout";
+import AnimatedText from "../components/AnimatedText";
+import Layout from "../components/Layout";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import React, { useRef } from "react";
 import award1 from "../../public/images/awards/create modal component in react using react portals.png";
 import { motion, useMotionValue } from "framer-motion";
-import TransitionEffect from "@/components/TransitionEffect";
+import TransitionEffect from "../components/TransitionEffect";
 
 const FramerImage = motion(Image);
 const MovingImg = ({ title, img, link }) => {

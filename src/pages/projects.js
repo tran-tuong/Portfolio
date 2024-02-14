@@ -1,13 +1,13 @@
-import AnimatedText from "@/components/AnimatedText";
+import AnimatedText from "../components/AnimatedText";
 import Image from "next/image";
 import Head from "next/head";
-import Layout from "@/components/Layout";
+import Layout from "../components/Layout";
 import React from "react";
 import Link from "next/link";
-import { GithubIcon } from "@/components/Icons";
+import { GithubIcon } from "../components/Icons";
 import { motion } from "framer-motion";
 import project1 from "../../public/images/projects/agency-website-cover-image.jpg";
-import TransitionEffect from "@/components/TransitionEffect";
+import TransitionEffect from "../components/TransitionEffect";
 
 const ProjectData = [
   {
