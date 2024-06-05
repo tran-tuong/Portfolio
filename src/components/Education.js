@@ -2,27 +2,20 @@ import React, { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
 import LiIcon from "./LiIcon";
 
-const dataExperience = [
+const dataEducation = [
   {
-    type: "Software Engineer",
-    company: "Google",
-    time: "2022-Present",
-    place: "Mountain View, CA",
-    info: "infoed on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization.",
+    type: "Vietnam National University, Hanoi",
+    company: "International School",
+    time: "2021 - Present",
+    place: "GPA: 3.53/4.0",
+    info: "Currently pursuing a Bachelor of Science in Informatics and Computer Engineering at the International School - Vietnam National University, Hanoi, achieving numerous scholarships. Completed relevant courses including System Software, Operating Systems, Foundations of Programming, and Data Structures and Algorithms, building a solid foundation in the field.",
   },
   {
-    type: "Software Engineer",
-    company: "Google",
-    time: "2022-Present",
-    place: "Mountain View, CA",
-    info: "infoed on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization.",
-  },
-  {
-    type: "Software Engineer",
-    company: "Google",
-    time: "2022-Present",
-    place: "Mountain View, CA",
-    info: "infoed on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization.",
+    type: "English Certificate",
+    company: "Aptis",
+    time: "2021",
+    place: "B2 Level",
+    info: "Proficiency in English by achieving the B2 APTIS level certification. This accomplishment reflects my ability to effectively communicate and understand complex concepts in English, further supporting my academic and professional endeavors.",
   },
 ];
 
@@ -72,7 +65,7 @@ const Education = () => {
             className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top md:w-[2px] md:left-[30px] xs:left-[19px]"
           />
           <ul className="w-full flex flex-col items-start justify-between ml-4 text-justify xs:ml-2">
-            {dataExperience.map((item, index) => {
+            {dataEducation.map((item, index) => {
               return (
                 <Details
                   key={index}

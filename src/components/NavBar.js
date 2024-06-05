@@ -91,7 +91,7 @@ const NavBar = () => {
           <CustomLink href="/" title="Home" className="mr-4" />
           <CustomLink href="/about" title="About" className="mx-4" />
           <CustomLink href="/projects" title="Projects" className="mx-4" />
-          <CustomLink href="/awards" title="Awards" className="ml-4" />
+          {/* <CustomLink href="/awards" title="Awards" className="ml-4" /> */}
         </nav>
 
         <nav className="flex items-center justify-center flex-wrap ">

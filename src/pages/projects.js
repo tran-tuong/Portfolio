@@ -6,45 +6,49 @@ import React from "react";
 import Link from "next/link";
 import { GithubIcon } from "../components/Icons";
 import { motion } from "framer-motion";
-import project1 from "../../public/images/projects/agency-website-cover-image.jpg";
+import portfolioImg from "../../public/images/projects/portfolio.png";
+import istechImg from "../../public/images/projects/istechWeb.png";
+import stuImg from "../../public/images/projects/StuMS.png";
+import guesImg from "../../public/images/projects/GuessMyNum.png";
+import pigImg from "../../public/images/projects/PigGame.png";
 import TransitionEffect from "../components/TransitionEffect";
 
 const ProjectData = [
   {
-    type: "Project 1",
-    link: "/",
-    github: "/",
+    type: "Group Project",
+    link: "https://web-istech.vercel.app/",
+    github: "https://github.com/tran-tuong/web-istech",
     summary:
-      "A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts.  It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency.",
-    title: "Crypto Screener Application",
-    img: project1,
+      "A Istech Web Application using React, Tailwind CSS, React Router.  Collaborated with a team of three to develop a web application for the ISTECH Club. Utilized Vercel for seamless deployment and continuous integration. Contributed significantly to front-end design, ensuring cohesive and aesthetically pleasing user experience.",
+    title: "Istech Website",
+    img: istechImg,
   },
   {
-    type: "Project 1",
-    link: "/",
-    github: "/",
+    type: "Group Project",
+    link: "https://github.com/tran-tuong/Student-Management-Systems",
+    github: "https://github.com/tran-tuong/Student-Management-Systems",
     summary:
-      "A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts.  It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency.",
-    title: "Crypto Screener Application",
-    img: project1,
+      "Collaborated with a team of three using C# ASP .NET MVC to develop a web application for managing student and course information. Main contributions included developing algorithms for CRUD operations, implementing authentication features for secure login and logout, and designing the user interface for user-friendly experience.",
+    title: "StuMS",
+    img: stuImg,
   },
   {
-    type: "Project 1",
-    link: "/",
-    github: "/",
+    type: "Personal Project",
+    link: "https://tran-tuong.github.io/GuestMyNum/",
+    github: "https://github.com/tran-tuong/GuestMyNum",
     summary:
-      "A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts.  It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency.",
-    title: "Crypto Screener Application",
-    img: project1,
+      "Create Guess My Num game using HTML, CSS and Javascript. Deployment with Github Page.",
+    title: "Guess My Num",
+    img: guesImg,
   },
   {
-    type: "Project 1",
-    link: "/",
-    github: "/",
+    type: "Personal Project",
+    link: "https://tran-tuong.github.io/PigGame/",
+    github: "https://github.com/tran-tuong/PigGame",
     summary:
-      "A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts.  It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency.",
-    title: "Crypto Screener Application",
-    img: project1,
+      "Create Pig Game using HTML, CSS and Javascript. Deployment with Github Page.",
+    title: "Pig Game",
+    img: pigImg,
   },
 ];
 
@@ -175,20 +179,17 @@ const projects = () => {
       <TransitionEffect />
       <main className="w-full mb-16 flex flex-col items-center justify-center">
         <Layout className="pt-16">
-          <AnimatedText
-            text="Imagination Trumps Knowledge!"
-            className="mb-16"
-          />
+          <AnimatedText text="My project" className="mb-16" />
 
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
-                type="Featured Project"
-                link="/"
-                github="/"
-                title="Crypto Screener Application"
-                img={project1}
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts.  It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
+                type="Personal Project"
+                link="https://trantuong.id.vn"
+                github="https://github.com/tran-tuong/Portfolio"
+                title="Personal Portfolio"
+                img={portfolioImg}
+                summary="Create portfolio App using React, Tailwind CSS. Implemented responsive design principles to ensure accessibility and visual appeal across various devices. Showcased personal projects, skills, and accomplishments. Deployed the website and conducted thorough testing for optimal performance and usability."
               />
             </div>
 

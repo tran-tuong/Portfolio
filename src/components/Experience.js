@@ -4,28 +4,20 @@ import LiIcon from "./LiIcon";
 
 const dataExperience = [
   {
-    position: "Software Engineer",
-    company: "Google",
-    companyLink: "https://www.facebook.com/",
-    time: "2022-Present",
-    address: "Mountain View, CA",
-    work: "Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization.",
+    position: "Vice President",
+    company: "ISTECH Club",
+    companyLink: "https://www.facebook.com/istechclub",
+    time: "2023 - Present",
+    address: "Internation School - VNU",
+    work: "Organized and led the iCode competition, an algorithm contest using C and C++. Managed and delegated responsibilities to club members, fostering collaboration and knowledge exchange in a 50-member club. Developed and executed promotional strategies through social media, design, and in-person campaigns, increasing member engagement and participation.",
   },
   {
-    position: "Software Engineer",
-    company: "Google",
-    companyLink: "https://www.facebook.com/",
-    time: "2022-Present",
-    address: "Mountain View, CA",
-    work: "Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization.",
-  },
-  {
-    position: "Software Engineer",
-    company: "Google",
-    companyLink: "https://www.facebook.com/",
-    time: "2022-Present",
-    address: "Mountain View, CA",
-    work: "Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization.",
+    position: "Finnovation",
+    company: "2022",
+    companyLink: "https://www.facebook.com/finnovationvietnam/",
+    time: "2022",
+    address: "Fintech Startup Challenge",
+    work: "Achieved top 30 status in the Finnovation startup competition organized by the Ministry of Science and Technology (NATEC) and VSDS, recognizing innovative contributions and entrepreneurial skills.",
   },
 ];
 
@@ -71,7 +63,7 @@ const Experience = () => {
     <>
       <div className="my-64">
         <h2 className="font-bold text-8xl mb-32 w-full text-center lg:text-7xl md:text-6xl md:mt-32 md:mb-16 sm:text-5xl xs:text-4xl">
-          Experience
+          Extracurricular
         </h2>
         <div
           ref={ref}

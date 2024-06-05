@@ -11,14 +11,14 @@ import Education from "../components/Education";
 import TransitionEffect from "../components/TransitionEffect";
 
 const bioContent = [
-  "Hi, I'm Tran Tuong, a web developer and UI/UX designer with apassion for creating beautiful, functional, and user-centered digital experiences. With 4 years of experience in the field. I am always looking for new and innovative ways to bring my clients' visions to life.",
-  "I believe that design is about more than just making things look pretty – it's about solving problems and creating intuitive, enjoyable experiences for users.",
-  "Whether I'm working on a website, mobile app, or other digital product, I bring my commitment to design excellence and user-centered thinking to every project I work on. I look forward to the opportunity to bring my skills and passion to your next project.",
+  "Hi! My name is Tran Van Tuong - fourth year student at the Vietnam National University, Hanoi. I have a passion for learning and developing high-quality web applications. I am always eager to improve myself and aspire to pursue a career as a Software Engineer.",
+  "I have a solid foundation in HTML, CSS, JavaScript, and have recently delved into frameworks such as React and Node.js. My coursework and projects have provided me with hands-on experience in developing and deploying web applications, reinforcing my desire to become a skilled Software Engineer.",
+  "During my time at university, I have worked on several projects that have honed my skills and allowed me to apply theoretical knowledge in practical settings. One notable project was the development of a personal website that showcases my portfolio and the project.",
 ];
 const bioNumber = [
-  { number: 50, name: "Satisfied Employee" },
-  { number: 40, name: "Hours per day" },
-  { number: 20, name: "Years of experinces" },
+  { number: 4, name: "Years Students" },
+  { number: 21, name: "Years appear in life" },
+  { number: 5, name: "Projects" },
 ];
 
 const AnimationNumbers = ({ value }) => {
@@ -53,10 +53,7 @@ const about = () => {
       <TransitionEffect />
       <main className="flex -w-full flex-col items-center justify-center">
         <Layout className="pt-16">
-          <AnimatedText
-            text="Passion Fuels Purpose!"
-            className="mb-16 sm:mb-8"
-          />
+          <AnimatedText text="About me" className="mb-16 sm:mb-8" />
 
           <div className="grid w-full grid-cols-8 gap-16 text-justify items-center justify-center sm:gap-8 ">
             <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8">
@@ -103,8 +100,8 @@ const about = () => {
             </div>
           </div>
           <Skills />
-          <Experience />
           <Education />
+          <Experience />
         </Layout>
       </main>
     </>

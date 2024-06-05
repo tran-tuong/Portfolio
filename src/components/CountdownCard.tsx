@@ -21,8 +21,8 @@ const CountdownCard = ({
     <div>
       <div className="relative perspective">
         {/* Top Half Static */}
-        <div className="relative rounded-t-lg h-20 w-44 md:h-10 md:w-20 overflow-hidden brightness-80">
-          <p className="absolute top-8 md:top-5 left-0 right-0 text-center text-theme_softRed text-8xl md:text-4xl font-bold">
+        <div className="relative rounded-t-lg h-[6rem] w-[13rem] md:h-10 md:w-20 overflow-hidden brightness-80">
+          <p className="absolute top-[3.75rem] md:top-[22px] left-0 right-0 text-center text-theme_softRed text-7xl md:text-3xl font-bold">
             {typeof current === "undefined" ? "" : padStart(current)}
           </p>
           <svg width="100%" height="100%">
@@ -40,9 +40,9 @@ const CountdownCard = ({
         </div>
 
         {/* Bottom Half Static */}
-        <div className="relative rounded-b-lg h-20 w-44 md:h-10 md:w-20 overflow-hidden">
+        <div className="relative rounded-b-lg h-[6rem] w-[13rem] md:h-10 md:w-20 overflow-hidden">
           <p
-            className="absolute bottom-8 md:bottom-5 left-0 right-0 text-center text-theme_softRed text-8xl md:text-4xl font-bold"
+            className="absolute bottom-[3.75rem] md:bottom-[22px] left-0 right-0 text-center text-theme_softRed text-7xl md:text-3xl font-bold"
             data-testid={id}
           >
             {typeof previous === "undefined" ? "" : padStart(previous)}
@@ -67,9 +67,9 @@ const CountdownCard = ({
 
         {previous !== current && (
           <>
-            <div className="absolute top-0 left-0 rounded-t-lg h-20 w-44 md:h-10 md:w-20 overflow-hidden brightness-80 animate-flipTop origin-bottom preserve-3d backface-hidden">
-              <div className="relative h-20 md:h-10">
-                <p className="absolute top-8 md:top-5 left-0 right-0 text-center text-theme_softRed text-8xl md:text-4xl font-bold">
+            <div className="absolute top-0 left-0 rounded-t-lg h-[6rem] w-[13rem] md:h-10 md:w-20 overflow-hidden brightness-80 animate-flipTop origin-bottom preserve-3d backface-hidden">
+              <div className="relative h-[6rem] md:h-10">
+                <p className="absolute top-[3.75rem] md:top-[22px] left-0 right-0 text-center text-theme_softRed text-7xl md:text-3xl font-bold">
                   {typeof previous === "undefined" ? "" : padStart(previous)}
                 </p>
                 <svg width="100%" height="100%">
@@ -87,9 +87,9 @@ const CountdownCard = ({
               </div>
             </div>
 
-            <div className="absolute top-20 md:top-10 left-0 rounded-b-lg h-20 w-44 md:h-10 md:w-20 overflow-hidden animate-flipBottom origin-top preserve-3d backface-hidden">
-              <div className="relative h-20 md:h-10">
-                <p className="absolute bottom-8 md:bottom-5 left-0 right-0 text-center text-theme_softRed text-8xl md:text-4xl font-bold">
+            <div className="absolute top-[6rem] md:top-10 left-0 rounded-b-lg h-[6rem] w-[13rem] md:h-10 md:w-20 overflow-hidden animate-flipBottom origin-top preserve-3d backface-hidden">
+              <div className="relative h-[6rem] md:h-10">
+                <p className="absolute bottom-[3.75rem] md:bottom-[22px] left-0 right-0 text-center text-theme_softRed text-7xl md:text-3xl font-bold">
                   {typeof current === "undefined" ? "" : padStart(current)}
                 </p>
                 <svg width="100%" height="100%">

@@ -13,7 +13,7 @@ const minievil = (): ReactElement => {
       <TransitionEffect />
       <main className="flex flex-col items-center justify-center min-h-[100vh]">
         <h1 className="text-dark text-2xl sm:text-sm md:text-base text-center tracking-widest pt-0 pb-8 ">
-          I FALL IN LOVE WITH MINI 😈ABOUT
+          I FALL IN LOVE WITH MINI 😈 ABOUT
         </h1>
         <div className="">
           <Countdown />
