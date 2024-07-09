@@ -11,9 +11,19 @@ import istechImg from "../../public/images/projects/istechWeb.png";
 import stuImg from "../../public/images/projects/StuMS.png";
 import guesImg from "../../public/images/projects/GuessMyNum.png";
 import pigImg from "../../public/images/projects/PigGame.png";
+import blogImg from "../../public/images/projects/PersonalBlog.png";
 import TransitionEffect from "../components/TransitionEffect";
 
 const ProjectData = [
+  {
+    type: "Personal Project",
+    link: "https://trantuong.id.vn",
+    github: "https://github.com/tran-tuong/Portfolio",
+    title: "Personal Portfolio",
+    img: portfolioImg,
+    summary:
+      "Create portfolio App using React, Tailwind CSS. Implemented responsive design principles to ensure accessibility and visual appeal across various devices. Showcased personal projects, skills, and accomplishments. Deployed the website and conducted thorough testing for optimal performance and usability.",
+  },
   {
     type: "Group Project",
     link: "https://web-istech.vercel.app/",
@@ -22,15 +32,6 @@ const ProjectData = [
       "A Istech Web Application using React, Tailwind CSS, React Router.  Collaborated with a team of three to develop a web application for the ISTECH Club. Utilized Vercel for seamless deployment and continuous integration. Contributed significantly to front-end design, ensuring cohesive and aesthetically pleasing user experience.",
     title: "Istech Website",
     img: istechImg,
-  },
-  {
-    type: "Group Project",
-    link: "https://github.com/tran-tuong/Student-Management-Systems",
-    github: "https://github.com/tran-tuong/Student-Management-Systems",
-    summary:
-      "Collaborated with a team of three using C# ASP .NET MVC to develop a web application for managing student and course information. Main contributions included developing algorithms for CRUD operations, implementing authentication features for secure login and logout, and designing the user interface for user-friendly experience.",
-    title: "StuMS",
-    img: stuImg,
   },
   {
     type: "Personal Project",
@@ -49,6 +50,15 @@ const ProjectData = [
       "Create Pig Game using HTML, CSS and Javascript. Deployment with Github Page.",
     title: "Pig Game",
     img: pigImg,
+  },
+  {
+    type: "Group Project",
+    link: "https://github.com/tran-tuong/Student-Management-Systems",
+    github: "https://github.com/tran-tuong/Student-Management-Systems",
+    summary:
+      "Collaborated with a team of three using C# ASP .NET MVC to develop a web application for managing student and course information. Main contributions included developing algorithms for CRUD operations, implementing authentication features for secure login and logout, and designing the user interface for user-friendly experience.",
+    title: "StuMS",
+    img: stuImg,
   },
 ];
 
@@ -188,11 +198,11 @@ const projects = () => {
             <div className="col-span-12">
               <FeaturedProject
                 type="Personal Project"
-                link="https://trantuong.id.vn"
-                github="https://github.com/tran-tuong/Portfolio"
-                title="Personal Portfolio"
-                img={portfolioImg}
-                summary="Create portfolio App using React, Tailwind CSS. Implemented responsive design principles to ensure accessibility and visual appeal across various devices. Showcased personal projects, skills, and accomplishments. Deployed the website and conducted thorough testing for optimal performance and usability."
+                link="https://personal-blog-r183.onrender.com "
+                github="https://github.com/tran-tuong/mern-blog"
+                title="Personal Blog"
+                img={blogImg}
+                summary="Create a Blog Application using NodeJS, ReactJS, MoogoseDB, Express, Firebase, and TailwindCSS. Allowed users to view, comment on, and like posts published by the admin. Implemented Google Authentication for secure and easy user login. Enabled admins to add, delete, and edit posts, users, and comments."
               />
             </div>
 
